@@ -1,0 +1,11 @@
+table {
+  width: 100%;
+}
+.btn-fill {
+  background: #227233;
+    border-radius: 10px;
+    padding: 2px 25px;
+    color: #ffffff;
+    min-width: 100px;
+    font-size: 12px;
+}
