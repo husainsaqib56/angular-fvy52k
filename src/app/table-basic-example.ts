@@ -31,7 +31,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   templateUrl: "table-basic-example.html"
 })
 export class TableBasicExample implements OnInit {
-  displayedColumns: string[] = ["position", "name", "weight", "status"];
+  displayedColumns: string[] = ["serialNum", "groupName", "metadataName", "metadataDescription",'custom', "value", "status", "action"];
   public dataSource: any
   public data: any;
   constructor(private http: HttpClient) {}
@@ -41,7 +41,7 @@ export class TableBasicExample implements OnInit {
   getData() {
     this.http
       .get(
-        "https://primus-platform-api-application-dev.azurewebsites.net/v1/lookups/get-lookup-value?UserID=1&ApplicationID=1&LookupID=1"
+        "https://primus-platform-api-application-dev.azurewebsites.net/v1/metadata/metadata?UserID=1&ApplicationID=1"
       )
       .subscribe(res => {
         console.log(res);

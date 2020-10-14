@@ -3,9 +3,27 @@ table {
 }
 .btn-fill {
   background: #227233;
-    border-radius: 10px;
-    padding: 2px 25px;
-    color: #ffffff;
-    min-width: 100px;
-    font-size: 12px;
+  border-radius: 10px;
+  padding: 2px 25px;
+  color: #ffffff;
+  min-width: 100px;
+  font-size: 12px;
+}
+
+.active-status {
+  background: #227233;
+  border-radius: 10px;
+  padding: 2px 25px;
+  color: #ffffff;
+  min-width: 100px;
+  font-size: 12px;
+}
+
+.inactive-status {
+  background: #595959;
+  border-radius: 10px;
+  padding: 2px 20px;
+  color: #ffffff;
+  min-width: 40px;
+  font-size: 12px;
 }
